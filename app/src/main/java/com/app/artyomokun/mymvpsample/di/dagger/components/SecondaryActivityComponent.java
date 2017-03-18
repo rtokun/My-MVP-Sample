@@ -2,8 +2,8 @@ package com.app.artyomokun.mymvpsample.di.dagger.components;
 
 import com.app.artyomokun.mymvpsample.di.dagger.modules.SecondaryModule;
 import com.app.artyomokun.mymvpsample.di.dagger.scopes.PerActivity;
-import com.app.artyomokun.mymvpsample.flow.secondary.interfaces.Secondary;
-import com.app.artyomokun.mymvpsample.flow.secondary.view.adapters.NotesAdapter;
+import com.app.artyomokun.mymvpsample.flow.type.two.interfaces.Secondary;
+import com.app.artyomokun.mymvpsample.flow.type.two.view.adapters.NotesAdapter;
 
 import dagger.Component;
 

@@ -4,12 +4,12 @@ import android.view.LayoutInflater;
 
 import com.app.artyomokun.mymvpsample.data.DataRepository;
 import com.app.artyomokun.mymvpsample.di.dagger.scopes.PerActivity;
-import com.app.artyomokun.mymvpsample.flow.secondary.SecondaryActivity;
-import com.app.artyomokun.mymvpsample.flow.secondary.interactor.SecondaryInteractor;
-import com.app.artyomokun.mymvpsample.flow.secondary.interfaces.Secondary;
-import com.app.artyomokun.mymvpsample.flow.secondary.presenter.SecondaryPresenter;
-import com.app.artyomokun.mymvpsample.flow.secondary.view.adapters.NotesAdapter;
-import com.app.artyomokun.mymvpsample.flow.secondary.view.dialog.NoteDialogFragment;
+import com.app.artyomokun.mymvpsample.flow.type.two.SecondaryActivity;
+import com.app.artyomokun.mymvpsample.flow.type.two.interactor.SecondaryInteractor;
+import com.app.artyomokun.mymvpsample.flow.type.two.interfaces.Secondary;
+import com.app.artyomokun.mymvpsample.flow.type.two.presenter.SecondaryPresenter;
+import com.app.artyomokun.mymvpsample.flow.type.two.view.adapters.NotesAdapter;
+import com.app.artyomokun.mymvpsample.flow.type.two.view.dialog.NoteDialogFragment;
 import com.app.artyomokun.mymvpsample.utils.rx.RxUtils;
 
 import dagger.Module;
@@ -30,16 +30,14 @@ public class SecondaryModule {
     @Provides
     @PerActivity
     Secondary.Interactor provideInteractor(DataRepository dataRepository) {
-        Secondary.Interactor interactor = new SecondaryInteractor(dataRepository);
-        return interactor;
+        return new SecondaryInteractor(dataRepository);
     }
 
     @Provides
     @PerActivity
     Secondary.Presenter providePresenter(Secondary.Interactor interactor,
                                          RxUtils rxUtils) {
-        Secondary.Presenter presenter = new SecondaryPresenter(interactor, mSecondaryActivity, rxUtils);
-        return presenter;
+        return new SecondaryPresenter(interactor, mSecondaryActivity, rxUtils);
     }
 
     @Provides

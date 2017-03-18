@@ -4,13 +4,13 @@ import android.view.LayoutInflater;
 
 import com.app.artyomokun.mymvpsample.data.DataRepository;
 import com.app.artyomokun.mymvpsample.di.dagger.scopes.PerActivity;
-import com.app.artyomokun.mymvpsample.flow.main.MainActivity;
-import com.app.artyomokun.mymvpsample.flow.main.interactor.MainInteractor;
-import com.app.artyomokun.mymvpsample.flow.main.interfaces.Main;
-import com.app.artyomokun.mymvpsample.flow.main.presenter.MainPresenter;
-import com.app.artyomokun.mymvpsample.flow.main.view.MainView;
-import com.app.artyomokun.mymvpsample.flow.main.view.adapters.NotesAdapter;
-import com.app.artyomokun.mymvpsample.flow.main.view.dialog.NoteDialogFragment;
+import com.app.artyomokun.mymvpsample.flow.type.one.MainActivity;
+import com.app.artyomokun.mymvpsample.flow.type.one.interactor.MainInteractor;
+import com.app.artyomokun.mymvpsample.flow.type.one.interfaces.Main;
+import com.app.artyomokun.mymvpsample.flow.type.one.presenter.MainPresenter;
+import com.app.artyomokun.mymvpsample.flow.type.one.view.MainView;
+import com.app.artyomokun.mymvpsample.flow.type.one.view.adapters.NotesAdapter;
+import com.app.artyomokun.mymvpsample.flow.type.one.view.dialog.NoteDialogFragment;
 import com.app.artyomokun.mymvpsample.utils.rx.RxUtils;
 
 import dagger.Module;

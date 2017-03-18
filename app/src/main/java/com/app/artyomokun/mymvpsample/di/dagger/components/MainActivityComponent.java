@@ -2,7 +2,7 @@ package com.app.artyomokun.mymvpsample.di.dagger.components;
 
 import com.app.artyomokun.mymvpsample.di.dagger.modules.MainModule;
 import com.app.artyomokun.mymvpsample.di.dagger.scopes.PerActivity;
-import com.app.artyomokun.mymvpsample.flow.main.interfaces.Main;
+import com.app.artyomokun.mymvpsample.flow.type.one.interfaces.Main;
 
 import dagger.Component;
 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.artyomokun.mymvpsample.flow.type.NavigationActivity"
+    >
+
+  <Button
+      android:id="@+id/btn_mvp_type_one"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="MVP TYPE 1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:layout_editor_absoluteX="147dp"
+      tools:layout_editor_absoluteY="16dp"
+      style="@style/ButtonStyle"
+      />
+
+  <Button
+      android:id="@+id/btn_mvp_type_two"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="MVP TYPE 2"
+      app:layout_constraintEnd_toEndOf="@id/btn_mvp_type_one"
+      app:layout_constraintStart_toStartOf="@id/btn_mvp_type_one"
+      app:layout_constraintTop_toBottomOf="@id/btn_mvp_type_one"
+      tools:layout_editor_absoluteX="147dp"
+      tools:layout_editor_absoluteY="16dp"
+      style="@style/ButtonStyle"
+      />
+
+
+</android.support.constraint.ConstraintLayout>
